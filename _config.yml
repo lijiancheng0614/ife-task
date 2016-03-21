@@ -1,7 +1,7 @@
 exclude: ["personal-website.sublime-project", "personal-website.sublime-workspace"]
 highlighter: rouge
 name: "Runnig man"
-title: "Dingmin Wang"
+title: "奔跑的大兄弟"
 description: "奔跑的大兄弟"
-baseurl: /huawei
+baseurl: /ife-task
 
