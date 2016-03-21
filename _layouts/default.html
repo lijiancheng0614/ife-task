@@ -6,11 +6,11 @@
    <meta name="author" content="奔跑吧大兄弟">
    <title>{% if page.pagetitle != null %}{{page.pagetitle}} | {% endif %}奔跑吧大兄弟</title>
    <link rel="icon" type="img/x-icon" href="favicon.icon">
-   <link rel="stylesheet" type="text/css" href="/huawei/css/main.css">
+   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
    {% if page.headcss != null %}{{ page.headcss }}{% endif %}
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/huawei/js/jquery-1.10.1.min.js"><\/script>')</script>
-  <script type="text/javascript" src={% if page.url == "/index.html" %}"/js/jquery.tipsy.js"{% else %}"/js/lightbox.js"{% endif %}></script>
+  <script>window.jQuery || document.write('<script src="/ife-task/js/jquery-1.10.1.min.js"><\/script>')</script>
+  <script type="text/javascript" src={% if page.url == "/index.html" %}"{{site.baseurl}}/js/jquery.tipsy.js"{% else %}"{{site.baseurl}}/js/lightbox.js"{% endif %}></script>
   {% if page.headjs != null %}{{ page.headjs }}{% endif %}
 </head>
 <body id="top" class="{{page.title | downcase |remove: ".html" |replace:'','-'}}-html">
